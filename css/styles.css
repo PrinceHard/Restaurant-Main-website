@@ -62,24 +62,6 @@ html{
   scroll-behavior: smooth;
 }
 
-/*========== Variables Dark theme ==========*/
-body.dark-theme{
-  --title-color: #F1F3F2;
-  --text-color: #C7D1CC;
-  --body-color: #1D2521;
-  --container-color: #27302C;
-}
-
-/*========== Button Dark/Light ==========*/
-.change-theme{
-  position: absolute;
-  right: 1rem;
-  top: 1.8rem;
-  color: var(--text-color);
-  font-size: 1rem;
-  cursor: pointer;
-}
-
 body{
   margin: var(--header-height) 0 0 0;
   font-family: var(--body-font);
@@ -300,4 +282,28 @@ img{
   justify-self: center;
 }
 
+.services__container{
+  row-gap: 2.5rem;
+  grid-template-columns: repeat(autofit, minmax(220px, 1fr));
+}
 
+.services__content{
+  text-align: center;
+}
+
+.services__img{
+  width: 64px;
+  height: 64px;
+  fill: var(--first-color);
+  margin-bottom: var(--mb-2);
+}
+
+.services__title{
+  font-size: var(--h3-font-size);
+  color: var(--title-color);
+  margin-bottom: var(--mb-1);
+}
+
+.services__description{
+  padding: 0 1.5rem;
+}
